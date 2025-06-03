@@ -2,7 +2,8 @@
 
 A modern Flutter app for user management, built with clean architecture, BLoC state management, and robust API integration.
 
-[![Watch Video]()](https://drive.google.com/file/d/1Jw3vV-o7Wb-6NJ1UUjK50bX_LEEggU0m/view?usp=sharing)
+https://github.com/user-attachments/assets/715f1320-8e5d-4f16-b517-7880d76cbab6
+
 
 
 ## 🚀 Project Overview
