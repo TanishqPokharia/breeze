@@ -3,7 +3,6 @@ import 'package:breeze/presentation/bloc/post/post_bloc.dart';
 import 'package:breeze/presentation/bloc/todo/todo_bloc.dart';
 import 'package:breeze/presentation/bloc/userlist/userlist_bloc.dart';
 import 'package:breeze/presentation/cubit/theme/theme_cubit.dart';
-import 'package:breeze/presentation/screens/local_posts_screen.dart';
 import 'package:breeze/router/router_config.dart';
 import 'package:breeze/themes/themes.dart';
 import 'package:breeze/utils/dependencies.dart';
