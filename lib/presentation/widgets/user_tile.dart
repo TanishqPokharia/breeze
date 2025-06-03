@@ -1,6 +1,7 @@
 import 'package:breeze/domain/entities/user.dart';
 import 'package:breeze/router/routes.dart';
 import 'package:breeze/utils/extensions/theme_extensions.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -30,7 +31,9 @@ class UserTile extends StatelessWidget {
       isThreeLine: true,
       leading: Hero(
         tag: user.image,
-        child: CircleAvatar(backgroundImage: NetworkImage(user.image)),
+        child: CircleAvatar(
+          backgroundImage: CachedNetworkImageProvider(user.image),
+        ),
       ),
       trailing: Column(
         mainAxisAlignment: MainAxisAlignment.center,

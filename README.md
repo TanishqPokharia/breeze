@@ -2,6 +2,9 @@
 
 A modern Flutter app for user management, built with clean architecture, BLoC state management, and robust API integration.
 
+[![Watch Video]()](https://drive.google.com/file/d/1Jw3vV-o7Wb-6NJ1UUjK50bX_LEEggU0m/view?usp=sharing)
+
+
 ## 🚀 Project Overview
 Breeze is a Flutter application that demonstrates best practices in Flutter development, focusing on user management with:
 - BLoC pattern for state management
@@ -93,7 +96,7 @@ lib/
   data/         # Data sources, models, repositories
   domain/       # Entities, repository interfaces, use cases
   presentation/ # BLoC, screens, widgets
-  utils/        # Utilities, helpers, extensions
+  utils/        # Utilities, helpers, extensions, http client
   themes/       # App colors, themes etc
   router/       # Router configurations 
 ```

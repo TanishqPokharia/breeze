@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:breeze/data/datasource/interfaces/local_user_datasource.dart';
 import 'package:breeze/data/models/local_post.dart';
 import 'package:breeze/data/models/post.dart';
@@ -73,6 +75,7 @@ class SqfliteLocalUserRepositoryImpl implements LocalUserRepository {
         return Right(users);
       });
     } catch (e) {
+      log("Error getting cached users", error: e);
       return Left(Failure(message: e.toString()));
     }
   }

@@ -3,6 +3,7 @@ import 'package:breeze/presentation/widgets/posts_tab.dart';
 import 'package:breeze/presentation/widgets/todos_tab.dart';
 import 'package:breeze/presentation/widgets/user_info_row.dart';
 import 'package:breeze/utils/extensions/theme_extensions.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class UserDetailsScreen extends StatelessWidget {
@@ -36,7 +37,9 @@ class UserDetailsScreen extends StatelessWidget {
                         child: Center(
                           child: CircleAvatar(
                             radius: 50,
-                            backgroundImage: NetworkImage(user.image),
+                            backgroundImage: CachedNetworkImageProvider(
+                              user.image,
+                            ),
                           ),
                         ),
                       ),

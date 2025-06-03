@@ -19,7 +19,7 @@ class UserModel extends User {
   // Creates a UserModel from JSON
   factory UserModel.fromJson(Map<String, dynamic> json) {
     return UserModel(
-      id: json['id'],
+      id: int.parse("${json['id']}"),
       firstName: json['firstName'],
       lastName: json['lastName'],
       age: json['age'],

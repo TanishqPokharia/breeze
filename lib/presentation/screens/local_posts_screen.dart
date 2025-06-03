@@ -19,6 +19,7 @@ class LocalPostsScreen extends StatelessWidget {
           floatingActionButton: FloatingActionButton(
             onPressed: () {
               showModalBottomSheet(
+                isScrollControlled: true,
                 context: context,
                 backgroundColor: context.theme.scaffoldBackgroundColor,
                 builder: (context) {
